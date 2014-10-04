@@ -8,12 +8,12 @@ import (
 
 	"launchpad.net/goyaml"
 
-	"github.com/drone/drone/pkg/build/buildfile"
-	"github.com/drone/drone/pkg/build/git"
-	"github.com/drone/drone/pkg/build/repo"
-	"github.com/drone/drone/pkg/plugin/deploy"
-	"github.com/drone/drone/pkg/plugin/notify"
-	"github.com/drone/drone/pkg/plugin/publish"
+	"github.com/suquant/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/git"
+	"github.com/suquant/drone/pkg/build/repo"
+	"github.com/suquant/drone/pkg/plugin/deploy"
+	"github.com/suquant/drone/pkg/plugin/notify"
+	"github.com/suquant/drone/pkg/plugin/publish"
 )
 
 func ParseBuild(data []byte, params map[string]string) (*Build, error) {

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/drone/drone/pkg/channel"
-	"github.com/drone/drone/pkg/database"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/channel"
+	"github.com/suquant/drone/pkg/database"
+	. "github.com/suquant/drone/pkg/model"
 	"github.com/drone/go-bitbucket/bitbucket"
 	"github.com/drone/go-github/github"
 

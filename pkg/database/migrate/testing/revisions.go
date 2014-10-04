@@ -1,7 +1,7 @@
 package migrate
 
 import (
-	. "github.com/drone/drone/pkg/database/migrate"
+	. "github.com/suquant/drone/pkg/database/migrate"
 )
 
 type Sample struct {

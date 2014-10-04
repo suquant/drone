@@ -4,7 +4,7 @@ import (
     "strings"
     "testing"
 
-    "github.com/drone/drone/pkg/build/buildfile"
+    "github.com/suquant/drone/pkg/build/buildfile"
 
     "launchpad.net/goyaml"
 )

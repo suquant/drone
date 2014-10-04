@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/smtp"
 
-	"github.com/drone/drone/pkg/database"
-	"github.com/drone/drone/pkg/template"
+	"github.com/suquant/drone/pkg/database"
+	"github.com/suquant/drone/pkg/template"
 )
 
 // A Message represents an email message. Addresses may be of any

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/drone/drone/pkg/database"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/database"
+	. "github.com/suquant/drone/pkg/model"
 )
 
 // ErrorHandler wraps the default http.HandleFunc to handle an

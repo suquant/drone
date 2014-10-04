@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/drone/drone",
+	"ImportPath": "github.com/suquant/drone",
 	"GoVersion": "go1.3.1",
 	"Packages": [
 		"./..."

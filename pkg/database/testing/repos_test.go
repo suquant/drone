@@ -3,7 +3,7 @@ package database
 import (
 	"testing"
 
-	"github.com/drone/drone/pkg/database"
+	"github.com/suquant/drone/pkg/database"
 )
 
 // TODO unit test to verify unique constraint on Member.UserID and Member.TeamID
@@ -23,8 +23,8 @@ func TestGetRepo(t *testing.T) {
 		t.Errorf("Exepected ID %d, got %d", 1, repo.ID)
 	}
 
-	if repo.Slug != "github.com/drone/drone" {
-		t.Errorf("Exepected Slug %s, got %s", "github.com/drone/drone", repo.Slug)
+	if repo.Slug != "github.com/suquant/drone" {
+		t.Errorf("Exepected Slug %s, got %s", "github.com/suquant/drone", repo.Slug)
 	}
 
 	if repo.Host != "github.com" {
@@ -86,7 +86,7 @@ func TestGetRepoSlug(t *testing.T) {
 	Setup()
 	defer Teardown()
 
-	repo, err := database.GetRepoSlug("github.com/drone/drone")
+	repo, err := database.GetRepoSlug("github.com/suquant/drone")
 	if err != nil {
 		t.Error(err)
 	}
@@ -95,8 +95,8 @@ func TestGetRepoSlug(t *testing.T) {
 		t.Errorf("Exepected ID %d, got %d", 1, repo.ID)
 	}
 
-	if repo.Slug != "github.com/drone/drone" {
-		t.Errorf("Exepected Slug %s, got %s", "github.com/drone/drone", repo.Slug)
+	if repo.Slug != "github.com/suquant/drone" {
+		t.Errorf("Exepected Slug %s, got %s", "github.com/suquant/drone", repo.Slug)
 	}
 
 	if repo.Host != "github.com" {
@@ -262,8 +262,8 @@ func TestListRepos(t *testing.T) {
 		t.Errorf("Exepected ID %d, got %d", 1, repo.ID)
 	}
 
-	if repo.Name != "github.com/drone/drone" {
-		t.Errorf("Exepected Name %s, got %s", "github.com/drone/drone", repo.Name)
+	if repo.Name != "github.com/suquant/drone" {
+		t.Errorf("Exepected Name %s, got %s", "github.com/suquant/drone", repo.Name)
 	}
 
 	if repo.Host != "github.com" {
@@ -345,8 +345,8 @@ func TestListReposTeam(t *testing.T) {
 		t.Errorf("Exepected ID %d, got %d", 1, repo.ID)
 	}
 
-	if repo.Slug != "github.com/drone/drone" {
-		t.Errorf("Exepected Slug %s, got %s", "github.com/drone/drone", repo.Slug)
+	if repo.Slug != "github.com/suquant/drone" {
+		t.Errorf("Exepected Slug %s, got %s", "github.com/suquant/drone", repo.Slug)
 	}
 
 	if repo.Host != "github.com" {

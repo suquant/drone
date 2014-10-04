@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/drone/drone/pkg/build/buildfile"
-	"github.com/drone/drone/pkg/build/repo"
+	"github.com/suquant/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/repo"
 )
 
 type Docker struct {

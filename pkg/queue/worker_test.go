@@ -1,7 +1,7 @@
 package queue
 
 import (
-	. "github.com/drone/drone/pkg/model"
+	. "github.com/suquant/drone/pkg/model"
 	"testing"
 )
 

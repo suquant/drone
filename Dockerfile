@@ -14,9 +14,9 @@ RUN go get github.com/tools/godep
 
 RUN mkdir -p /gocode/src/github.com/drone
 
-ADD . /gocode/src/github.com/drone/drone
+ADD . /gocode/src/github.com/suquant/drone
 
-WORKDIR /gocode/src/github.com/drone/drone
+WORKDIR /gocode/src/github.com/suquant/drone
 
 RUN godep restore
 RUN make

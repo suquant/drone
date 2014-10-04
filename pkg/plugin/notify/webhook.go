@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/model"
 )
 
 type Webhook struct {

@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/drone/drone/pkg/build/buildfile"
-	"github.com/drone/drone/pkg/build/docker"
-	"github.com/drone/drone/pkg/build/proxy"
-	"github.com/drone/drone/pkg/build/repo"
-	"github.com/drone/drone/pkg/build/script"
+	"github.com/suquant/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/docker"
+	"github.com/suquant/drone/pkg/build/proxy"
+	"github.com/suquant/drone/pkg/build/repo"
+	"github.com/suquant/drone/pkg/build/script"
 )
 
 var (
@@ -78,7 +78,7 @@ func TestSetup(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/suquant/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.dockerClient = client
@@ -145,7 +145,7 @@ func TestSetupErrorRunDaemonPorts(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/suquant/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.Build.Services = append(b.Build.Services, "mysql")
@@ -184,7 +184,7 @@ func TestSetupErrorServiceInspect(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/suquant/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.Build.Services = append(b.Build.Services, "mysql")
@@ -212,7 +212,7 @@ func TestSetupErrorImagePull(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/suquant/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.Build.Services = append(b.Build.Services, "mysql")
@@ -242,7 +242,7 @@ func TestSetupErrorBuild(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/suquant/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.dockerClient = client
@@ -277,7 +277,7 @@ func TestSetupErrorBuildInspect(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/suquant/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.dockerClient = client
@@ -542,11 +542,11 @@ func TestWriteBuildScript(t *testing.T) {
 	b.Build = &script.Build{
 		Hosts: []string{"127.0.0.1"}}
 	b.Repo = &repo.Repo{
-		Path:   "git://github.com/drone/drone.git",
+		Path:   "git://github.com/suquant/drone.git",
 		Branch: "master",
 		Commit: "e7e046b35",
 		PR:     "123",
-		Dir:    "/var/cache/drone/github.com/drone/drone"}
+		Dir:    "/var/cache/drone/github.com/suquant/drone"}
 	b.writeBuildScript(dir)
 
 	// persist a dummy build script to disk
@@ -561,14 +561,14 @@ func TestWriteBuildScript(t *testing.T) {
 	f.WriteEnv("DRONE_BRANCH", "master")
 	f.WriteEnv("DRONE_COMMIT", "e7e046b35")
 	f.WriteEnv("DRONE_PR", "123")
-	f.WriteEnv("DRONE_BUILD_DIR", "/var/cache/drone/github.com/drone/drone")
+	f.WriteEnv("DRONE_BUILD_DIR", "/var/cache/drone/github.com/suquant/drone")
 	f.WriteEnv("CI_NAME", "DRONE")
 	f.WriteEnv("CI_BUILD_NUMBER", "e7e046b35")
 	f.WriteEnv("CI_BUILD_URL", "")
 	f.WriteEnv("CI_BRANCH", "master")
 	f.WriteEnv("CI_PULL_REQUEST", "123")
 	f.WriteHost("127.0.0.1")
-	f.WriteCmd("git clone --depth=0 --recursive git://github.com/drone/drone.git /var/cache/drone/github.com/drone/drone")
+	f.WriteCmd("git clone --depth=0 --recursive git://github.com/suquant/drone.git /var/cache/drone/github.com/suquant/drone")
 	f.WriteCmd("git fetch origin +refs/pull/123/head:refs/remotes/origin/pr/123")
 	f.WriteCmd("git checkout -qf -b pr/123 origin/pr/123")
 

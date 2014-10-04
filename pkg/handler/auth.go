@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/drone/drone/pkg/database"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/database"
+	. "github.com/suquant/drone/pkg/model"
 	"github.com/drone/go-bitbucket/bitbucket"
 	"github.com/drone/go-bitbucket/oauth1"
 	"github.com/drone/go-github/github"

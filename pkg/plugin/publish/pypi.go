@@ -3,7 +3,7 @@ package publish
 import (
 	"fmt"
 
-	"github.com/drone/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/buildfile"
 )
 
 // set up the .pypirc file

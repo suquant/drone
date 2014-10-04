@@ -8,12 +8,12 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/drone/drone/pkg/database"
-	"github.com/drone/drone/pkg/handler"
-	"github.com/drone/drone/pkg/model"
-	"github.com/drone/drone/pkg/queue"
+	"github.com/suquant/drone/pkg/database"
+	"github.com/suquant/drone/pkg/handler"
+	"github.com/suquant/drone/pkg/model"
+	"github.com/suquant/drone/pkg/queue"
 
-	dbtest "github.com/drone/drone/pkg/database/testing"
+	dbtest "github.com/suquant/drone/pkg/database/testing"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

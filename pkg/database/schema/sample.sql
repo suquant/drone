@@ -24,7 +24,7 @@ insert into members values (3, 1, 3, 'Write');
 
 -- insert repository
 insert into repos values (1, 'github.com/drone/jkl',           'github.com', 'drone',         'jkl',   0, 0, 0, 0, 900, 'git', 'git://github.com/drone/jkl.git',          '', '', '', '', '', '2013-09-16 00:00:00', '2013-09-16 00:00:00', 1, 1);
-insert into repos values (2, 'github.com/drone/drone',         'github.com', 'drone',         'drone', 1, 0, 0, 0, 900, 'git', 'git@github.com:drone/drone.git',          '', '', '', '', '', '2013-09-16 00:00:00', '2013-09-16 00:00:00', 1, 1);
+insert into repos values (2, 'github.com/suquant/drone',         'github.com', 'drone',         'drone', 1, 0, 0, 0, 900, 'git', 'git@github.com:drone/drone.git',          '', '', '', '', '', '2013-09-16 00:00:00', '2013-09-16 00:00:00', 1, 1);
 insert into repos values (3, 'github.com/bradrydzewski/drone', 'github.com', 'bradrydzewski', 'drone', 1, 0, 0, 0, 900, 'git', 'git@github.com:bradrydzewski/drone.git',  '', '', '', '', '', '2013-09-16 00:00:00', '2013-09-16 00:00:00', 1, 1);
 insert into repos values (4, 'github.com/bradrydzewski/blog',  'github.com', 'bradrydzewski', 'blog',  0, 0, 0, 0, 900, 'git', 'git://github.com/bradrydzewski/blog.git', '', '', '', '', '', '2013-09-16 00:00:00', '2013-09-16 00:00:00', 1, 0);
 

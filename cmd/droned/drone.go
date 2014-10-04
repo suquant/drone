@@ -12,11 +12,11 @@ import (
 	"github.com/GeertJohan/go.rice"
 	"github.com/bmizerany/pat"
 
-	"github.com/drone/drone/pkg/build/docker"
-	"github.com/drone/drone/pkg/channel"
-	"github.com/drone/drone/pkg/database"
-	"github.com/drone/drone/pkg/handler"
-	"github.com/drone/drone/pkg/queue"
+	"github.com/suquant/drone/pkg/build/docker"
+	"github.com/suquant/drone/pkg/channel"
+	"github.com/suquant/drone/pkg/database"
+	"github.com/suquant/drone/pkg/handler"
+	"github.com/suquant/drone/pkg/queue"
 )
 
 var (

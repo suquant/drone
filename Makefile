@@ -1,4 +1,4 @@
-SELFPKG := github.com/drone/drone
+SELFPKG := github.com/suquant/drone
 VERSION := 0.2
 SHA := $(shell git rev-parse --short HEAD)
 BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
@@ -20,7 +20,7 @@ model \
 plugin/deploy \
 plugin/publish \
 queue
-PKGS := $(addprefix github.com/drone/drone/pkg/,$(PKGS))
+PKGS := $(addprefix github.com/suquant/drone/pkg/,$(PKGS))
 .PHONY := test $(PKGS)
 
 all: embed build

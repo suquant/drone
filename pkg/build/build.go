@@ -10,13 +10,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/drone/drone/pkg/build/buildfile"
-	"github.com/drone/drone/pkg/build/docker"
-	"github.com/drone/drone/pkg/build/dockerfile"
-	"github.com/drone/drone/pkg/build/log"
-	"github.com/drone/drone/pkg/build/proxy"
-	"github.com/drone/drone/pkg/build/repo"
-	"github.com/drone/drone/pkg/build/script"
+	"github.com/suquant/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/docker"
+	"github.com/suquant/drone/pkg/build/dockerfile"
+	"github.com/suquant/drone/pkg/build/log"
+	"github.com/suquant/drone/pkg/build/proxy"
+	"github.com/suquant/drone/pkg/build/repo"
+	"github.com/suquant/drone/pkg/build/script"
 )
 
 // BuildState stores information about a build

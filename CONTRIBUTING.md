@@ -38,7 +38,7 @@ the vision of the project.
 ### Create issues...
 
 Any significant improvement should be documented as [a GitHub
-issue](https://github.com/drone/drone/issues) before anybody
+issue](https://github.com/suquant/drone/issues) before anybody
 starts working on it.
 
 ### ...but check for existing issues first!

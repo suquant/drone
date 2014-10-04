@@ -3,7 +3,7 @@ package database
 import (
 	"testing"
 
-	"github.com/drone/drone/pkg/database"
+	"github.com/suquant/drone/pkg/database"
 )
 
 func TestGetCommit(t *testing.T) {

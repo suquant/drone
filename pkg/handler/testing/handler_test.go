@@ -5,9 +5,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	. "github.com/drone/drone/pkg/database/testing"
-	"github.com/drone/drone/pkg/handler"
-	. "github.com/drone/drone/pkg/model"
+	. "github.com/suquant/drone/pkg/database/testing"
+	"github.com/suquant/drone/pkg/handler"
+	. "github.com/suquant/drone/pkg/model"
 
 	"github.com/bmizerany/pat"
 	. "github.com/smartystreets/goconvey/convey"
@@ -38,14 +38,14 @@ func TestRepoHandler(t *testing.T) {
 		})
 
 		Convey("Private repo can not be viewed without login", func() {
-			req, err := http.NewRequest("GET", "/github.com/drone/drone", nil)
+			req, err := http.NewRequest("GET", "/github.com/suquant/drone", nil)
 			So(err, ShouldBeNil)
 			rec := httptest.NewRecorder()
 			m.ServeHTTP(rec, req)
 			So(rec.Code, ShouldEqual, 303)
 		})
 		Convey("Private repo can not be viewed by a non team member", func() {
-			req, err := http.NewRequest("GET", "/github.com/drone/drone", nil)
+			req, err := http.NewRequest("GET", "/github.com/suquant/drone", nil)
 			So(err, ShouldBeNil)
 			rec := httptest.NewRecorder()
 			setUserSession(rec, req, "rick@el.to.ro")

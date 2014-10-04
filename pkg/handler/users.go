@@ -3,8 +3,8 @@ package handler
 import (
 	"net/http"
 
-	"github.com/drone/drone/pkg/database"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/database"
+	. "github.com/suquant/drone/pkg/model"
 )
 
 // Display the dashboard for a specific user

@@ -6,9 +6,9 @@ import (
 	//"net/url"
 	"testing"
 
-	//"github.com/drone/drone/database"
-	. "github.com/drone/drone/pkg/database/testing"
-	//"github.com/drone/drone/handler"
+	//"github.com/suquant/drone/database"
+	. "github.com/suquant/drone/pkg/database/testing"
+	//"github.com/suquant/drone/handler"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

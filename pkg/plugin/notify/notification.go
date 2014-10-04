@@ -1,7 +1,7 @@
 package notify
 
 import (
-	"github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/model"
 )
 
 // Context represents the context of an

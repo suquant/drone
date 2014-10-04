@@ -1,7 +1,7 @@
 package deploy
 
 import (
-	"github.com/drone/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/buildfile"
 )
 
 // Deploy stores the configuration details

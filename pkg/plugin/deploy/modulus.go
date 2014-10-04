@@ -2,7 +2,7 @@ package deploy
 
 import (
 	"fmt"
-	"github.com/drone/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/buildfile"
 )
 
 type Modulus struct {

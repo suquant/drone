@@ -1,7 +1,7 @@
 package database
 
 import (
-	. "github.com/drone/drone/pkg/model"
+	. "github.com/suquant/drone/pkg/model"
 	"github.com/russross/meddler"
 )
 

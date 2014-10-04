@@ -22,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :private_network, ip: "192.168.10.101"
 
   # Sync this repo into what will be $GOPATH
-  config.vm.synced_folder ".", "/opt/go/src/github.com/drone/drone"
+  config.vm.synced_folder ".", "/opt/go/src/github.com/suquant/drone"
 
   # system-level initial setup
   config.vm.provision "shell", inline: <<-EOF
@@ -63,7 +63,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Install drone
     echo "Building Drone"
-    cd $GOPATH/src/github.com/drone/drone
+    cd $GOPATH/src/github.com/suquant/drone
     make godep
     export GOPATH=`godep path`:$GOPATH
     export PATH=$PATH:$GOPATH/bin:`godep path`/bin
@@ -72,7 +72,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 
     # Auto cd to drone install dir
-    echo "cd /opt/go/src/github.com/drone/drone" >> /home/vagrant/.bashrc
+    echo "cd /opt/go/src/github.com/suquant/drone" >> /home/vagrant/.bashrc
 
 
     # Cleanup

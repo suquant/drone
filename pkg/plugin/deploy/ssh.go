@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/drone/drone/pkg/build/buildfile"
+	"github.com/suquant/drone/pkg/build/buildfile"
 )
 
 // SSH struct holds configuration data for deployment

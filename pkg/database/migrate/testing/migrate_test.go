@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/drone/drone/pkg/database/migrate"
+	. "github.com/suquant/drone/pkg/database/migrate"
 
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/mattn/go-sqlite3"

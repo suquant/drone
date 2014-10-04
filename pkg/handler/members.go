@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/dchest/authcookie"
-	"github.com/drone/drone/pkg/database"
-	"github.com/drone/drone/pkg/mail"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/database"
+	"github.com/suquant/drone/pkg/mail"
+	. "github.com/suquant/drone/pkg/model"
 )
 
 // Display a list of Team Members.

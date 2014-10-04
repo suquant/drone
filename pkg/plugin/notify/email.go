@@ -1,6 +1,6 @@
 package notify
 
-import "github.com/drone/drone/pkg/mail"
+import "github.com/suquant/drone/pkg/mail"
 
 type Email struct {
 	Recipients []string `yaml:"recipients,omitempty"`

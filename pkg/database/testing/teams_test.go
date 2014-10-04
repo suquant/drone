@@ -3,7 +3,7 @@ package database
 import (
 	"testing"
 
-	"github.com/drone/drone/pkg/database"
+	"github.com/suquant/drone/pkg/database"
 )
 
 // TODO unit test to verify unique constraint on Member.UserID and Member.TeamID

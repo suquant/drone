@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/drone/drone/pkg/database"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/database"
+	. "github.com/suquant/drone/pkg/model"
 )
 
 // Display a specific Team.

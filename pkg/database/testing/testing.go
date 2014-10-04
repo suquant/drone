@@ -8,9 +8,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/drone/drone/pkg/database"
-	"github.com/drone/drone/pkg/database/encrypt"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/database"
+	"github.com/suquant/drone/pkg/database/encrypt"
+	. "github.com/suquant/drone/pkg/model"
 
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/russross/meddler"
@@ -162,7 +162,7 @@ func Setup() {
 
 	// create dummy repo data
 	repo1 := Repo{
-		Slug:       "github.com/drone/drone",
+		Slug:       "github.com/suquant/drone",
 		Host:       "github.com",
 		Owner:      "drone",
 		Name:       "drone",

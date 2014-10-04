@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/drone/drone/pkg/database"
-	. "github.com/drone/drone/pkg/model"
-	"github.com/drone/drone/pkg/queue"
+	"github.com/suquant/drone/pkg/database"
+	. "github.com/suquant/drone/pkg/model"
+	"github.com/suquant/drone/pkg/queue"
 	"github.com/plouc/go-gitlab-client"
 )
 

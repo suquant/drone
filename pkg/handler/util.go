@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/dchest/authcookie"
-	"github.com/drone/drone/pkg/template"
+	"github.com/suquant/drone/pkg/template"
 )
 
 // -----------------------------------------------------------------------------

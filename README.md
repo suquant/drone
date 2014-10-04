@@ -1,7 +1,7 @@
 Drone is a [Continuous Integration](http://en.wikipedia.org/wiki/Continuous_integration) platform built on [Docker](https://www.docker.io/)
 
-[![Build Status](http://test.drone.io/v1/badge/github.com/drone/drone/status.svg?branch=master)](http://test.drone.io/github.com/drone/drone)
-[![GoDoc](https://godoc.org/github.com/drone/drone?status.png)](https://godoc.org/github.com/drone/drone)
+[![Build Status](http://test.drone.io/v1/badge/github.com/suquant/drone/status.svg?branch=master)](http://test.drone.io/github.com/suquant/drone)
+[![GoDoc](https://godoc.org/github.com/suquant/drone?status.png)](https://godoc.org/github.com/suquant/drone)
 
 ### Getting Started
 
@@ -345,7 +345,7 @@ cache:
   - .npm
 ```
 
-**NOTE:** this is an alpha quality feature and still has some quirks. See https://github.com/drone/drone/issues/147
+**NOTE:** this is an alpha quality feature and still has some quirks. See https://github.com/suquant/drone/issues/147
 
 ### Params Injection
 
@@ -365,7 +365,7 @@ notify:
 
 ### Wall display
 
-A wall display for Drone is available as a separate service. See [Drone Wall](https://github.com/drone/drone-wall)
+A wall display for Drone is available as a separate service. See [Drone Wall](https://github.com/suquant/drone-wall)
 for details.
 
 ### Local development
@@ -384,5 +384,5 @@ The Makefile has other targets so check that out for more build, test, run confi
 ### Docs
 
 * [drone.readthedocs.org](http://drone.readthedocs.org/) (Coming Soon)
-* [GoDoc](http://godoc.org/github.com/drone/drone)
+* [GoDoc](http://godoc.org/github.com/suquant/drone)
 

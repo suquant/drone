@@ -9,9 +9,9 @@ import (
 
 	"github.com/dchest/authcookie"
 	"github.com/dchest/passwordreset"
-	"github.com/drone/drone/pkg/database"
-	"github.com/drone/drone/pkg/mail"
-	. "github.com/drone/drone/pkg/model"
+	"github.com/suquant/drone/pkg/database"
+	"github.com/suquant/drone/pkg/mail"
+	. "github.com/suquant/drone/pkg/model"
 )
 
 var (
